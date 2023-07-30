@@ -13,4 +13,5 @@ public interface QnAService {
 	public abstract int delete(int bno);
 	
 	
+	
 }

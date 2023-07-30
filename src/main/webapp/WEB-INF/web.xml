@@ -30,4 +30,18 @@
 		<url-pattern>/</url-pattern>
 	</servlet-mapping>
 
+	<!-- 클래스 안에 있는 필터네임을 가진 필터로 서블렛네임의 서블렛에 필터를 적용한다 -->
+	<filter>
+		<filter-name>encoding</filter-name>
+		<filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+		<init-param>
+			<param-name>encoding</param-name>
+			<param-value>UTF-8</param-value>
+		</init-param>
+	</filter>
+	<filter-mapping>
+		<filter-name>encoding</filter-name>
+		<servlet-name>appServlet</servlet-name>
+	</filter-mapping>
+
 </web-app>
