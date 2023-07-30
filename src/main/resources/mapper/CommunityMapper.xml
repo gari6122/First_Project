@@ -5,7 +5,7 @@
 	<!-- 글 등록 insert-->
 	<insert id="insertCommu">
 		INSERT INTO BOARD_COMMU (cm_bno, cm_title, cm_content, cm_date) VALUES
-		(SEQ_BOARD_COMMU.NEXTVAL, #{cm_title}, #{cm_content}, sysdate);
+		(SEQ_BOARD_COMMU.NEXTVAL, #{cm_title}, #{cm_content}, sysdate)
 	</insert>
 	
 	
