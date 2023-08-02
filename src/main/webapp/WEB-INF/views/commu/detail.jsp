@@ -5,9 +5,7 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/list-groups/">
-<link href="/resources/css/community/css/bootstrap.min.css">
-<link href="/resources/js/community/js/bootstrap.bundle.min.js">
+
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">

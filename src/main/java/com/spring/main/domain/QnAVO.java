@@ -11,6 +11,5 @@ public class QnAVO {
 	private String qna_title;
 	private String qna_content;
 	private Date qna_date;
-	private AdminVO admin_id;
 	
 }

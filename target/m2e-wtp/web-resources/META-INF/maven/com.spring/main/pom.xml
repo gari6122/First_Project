@@ -20,6 +20,14 @@
 	<dependencies>
 
 <!-- 추가 dependency -->
+
+ 
+<!-- jsp 사용을 위해 추가함 (jstl) -->
+<dependency>
+    <groupId>javax.servlet</groupId>
+    <artifactId>jstl</artifactId> 
+</dependency>     
+
 		<!-- AOP 처리 객체 생성 시 Aspectj Weaver lib 필요 -->
 		<!-- https://mvnrepository.com/artifact/org.aspectj/aspectjweaver -->
 		<dependency>
