@@ -26,7 +26,7 @@
 				<th>수정일</th>
 			</tr>
 		</thead>
-		 <a href="/commu/write"><input type="button" value="글쓰기"></a>
+		<a href="/commu/write"><input type="button" value="글쓰기"></a>
 		<c:forEach items="${list}" var="list">
 			<tr>
 				<td>

@@ -7,48 +7,39 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>write</title>
+<script>
+function goBack() {
+	window.location.href = "/commu/list";
+}
+</script>
 </head>
 <body>
-            <form id="insertCommu" action="/commu/write" method="post">
-                <div class="frameWrap">
-                    <div>Write</div>
-                    <div>
-                        <input type="text" name="title" class="" placeholder="제목">
-                    </div>
-                    <div class="n3">
-                        <textarea row="50" placeholder="내용" name="content"></textarea>
-                    </div>
-                    <div class="n4">
-                        <button
-                            class="button button--ujarak button--border-thin button--text-thick btnRegister">등록</button>
-                        <button
-                            class="button button--ujarak button--border-thin button--text-thick btnRegister" id="cancle">취소</button>
-                    </div>
-                </div>
-            </form>
- <script type="text/javascript">
  
- $("#cancle").click(function(){
-	 
-	 var title = $("input[name='title']").val();
-     var content = $("textarea[name='content']").val();
-     
-     if (title !== '' || content !== '') {
-         event.preventDefault();
-         var result = confirm("작성을 취소하십니까?");
-         if (result) {
-             window.location.href = "/commu/list";
-	 	}
-     } else {
-         event.preventDefault();
-         var result = confirm("작성을 취소하십니까?");
-         if (result) {
-             window.location.href = "/commu/list";
-	 	}
-     }
-     
- });
+<form action="/commu/write" method="post">
+	 <div class="container">
+        <div>
+            <h2 class="main_title">WRITE</h2>
+            <div class="write_form">
+               <input name="title" class="title_form" placeholder="제목을 입력하세요">
+               </input>
+               <hr class="line_form">
+               <textarea name="content" class="content_form" placeholder="내용을 입력하세요" ></textarea>
+             
+            </div>
+              
+            <div class="insert_form">
+                <span class="writer_span">작성자</span>
+                <input class="writer_input" name="writer">
+            
+            </div>
 
- </script>
+            <div class="btn_form">
+                <button class="submit_btn">등록</button>
+                <button class="cancel_btn" type="button" onclick="goBack()">취소</button>
+            </div>    
+        </div>
+    </div> 
+</form>
+
 </body>
 </html>
