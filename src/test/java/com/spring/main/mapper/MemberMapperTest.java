@@ -20,13 +20,13 @@ public class MemberMapperTest {
 	public void memberJoin() throws Exception{
 		MemberVO member = new MemberVO();
 		
-		member.setMemberId("test");
-		member.setMemberPw("test");
-		member.setMemberName("test");
-		member.setMemberMail("test");
-		member.setMemberAddr1("test");
-		member.setMemberAddr2("test");
-		member.setMemberAddr3("test");
+		member.setMemberId("test3");
+		member.setMemberPw("test3");
+		member.setMemberName("test3");
+		member.setMemberMail("test3");
+		member.setMemberAddr1("test3");
+		member.setMemberAddr2("test3");
+		member.setMemberAddr3("test3");
 		
 		membermapper.memberJoin(member);
 	}
